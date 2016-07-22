@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-plugin-demo"
+      version="1.2.1">
+
+    <name>DemoPlugin</name>
+    <description>Cordova Notification Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,notification</keywords>
+
+    <js-module src="www/demoPlguin.js" name="demoPlguin">
+        <merges target="demo.plugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="DemoPlugin">
+                <param name="android-package" value="org.apache.cordova.demo.DemoPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/DemoPlugin.java" target-dir="src/org/apache/cordova/demo" />
+
+        <!-- android specific notification apis -->
+<!--        <js-module src="www/android/notification.js" name="notification_android">
+            <merges target="navigator.notification" />
+        </js-module>-->
+
+    </platform>
+</plugin>

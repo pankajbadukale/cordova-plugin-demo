@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-demo-plugin",
+  "version": "1.2.1",
+  "description": "Cordova Demo Plugin",
+  "cordova": {
+    "id": "cordova-plugin-demo-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+  },
+  "keywords": [
+    "cordova-android"
+  ],
+  "scripts": {
+  },
+  "author": "Pankaj Badukale",
+  "license": "Apache-2.0",
+  "devDependencies": {
+  }
+}
